@@ -1,0 +1,6 @@
+Using Techfile: /home/ubuntu/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+Using layout file: /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/klayout/i3c_slow_counters.gds
+[INFO] Reading tech file: /home/ubuntu/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+[INFO] Reading Layout file: /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/klayout/i3c_slow_counters.gds
+[INFO] Writing out PNG screenshot '/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/klayout/i3c_slow_counters.gds.png'
+Done

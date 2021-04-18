@@ -1,0 +1,40 @@
+Sun Apr 18 14:01:01 UTC 2021 - Executing "python3 /openLANE_flow/scripts/extract_metal_layers.py -t /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef -o /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/tmp/met_layers_list.txt"
+
+Sun Apr 18 14:01:01 UTC 2021 - Executing "/openLANE_flow/scripts/mergeLef.py -i /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_12.lef /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__decap_12.lef /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef} -o /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Sun Apr 18 14:01:02 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/tmp/trimmed.lib.exclude.list > /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/tmp/trimmed.lib"
+
+Sun Apr 18 14:01:02 UTC 2021 - Executing "echo {openlane v0.12-4-g3f66c6e} > /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/OPENLANE_VERSION"
+
+Sun Apr 18 14:01:02 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Sun Apr 18 14:01:02 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/synthesis/1-yosys.log |& tee >&@stdout"
+
+Sun Apr 18 14:01:03 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/i3c_slow_counters\/runs\/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC\/results\/synthesis\/i3c_slow_counters.synthesis.v/} /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/config.tcl"
+
+Sun Apr 18 14:01:03 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/config.tcl"
+
+Sun Apr 18 14:01:03 UTC 2021 - Executing "sed -i /defparam/d /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis.v"
+
+Sun Apr 18 14:01:03 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/synthesis/2-opensta"
+
+Sun Apr 18 14:01:04 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_floorplan.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/floorplan/3-verilog2def.openroad.log"
+
+Sun Apr 18 14:01:06 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_ioplacer.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/floorplan/4-ioPlacer.log"
+
+Sun Apr 18 14:01:07 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_tapcell.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/floorplan/5-tapcell.log"
+
+Sun Apr 18 14:01:09 UTC 2021 - Executing "bash /openLANE_flow/scripts/klayout/scrotLayout.sh /home/ubuntu/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/floorplan/i3c_slow_counters.floorplan.def |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/klayout/6-klayout.scrot.log"
+
+Sun Apr 18 14:01:13 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_pdn.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/floorplan/7-pdn.log"
+
+Sun Apr 18 14:01:15 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_replace.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/placement/8-replace.log"
+
+Sun Apr 18 14:01:23 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_resizer.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/placement/8-resizer.log"
+
+Sun Apr 18 14:01:30 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/logs/9-write_verilog.log"
+
+Sun Apr 18 14:01:31 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/i3c_slow_counters\/runs\/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC\/results\/synthesis\/i3c_slow_counters.synthesis_optimized.v/} /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/config.tcl"
+
+Sun Apr 18 14:01:31 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/i3c_slow_counters\/runs\/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC\/results\/synthesis\/i3c_slow_counters.synthesis.v/} /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/config.tcl"
+

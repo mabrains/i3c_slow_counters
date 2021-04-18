@@ -1,0 +1,1558 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v
+Parsing Verilog input from `/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v' to AST representation.
+Generating RTLIL representation for module `\i3c_slow_counters'.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:40: Warning: Identifier `\request_start' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:41: Warning: Identifier `\_048_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:42: Warning: Identifier `\net17' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:43: Warning: Identifier `\net18' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:44: Warning: Identifier `\_049_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:46: Warning: Identifier `\_003_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:49: Warning: Identifier `\_050_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:50: Warning: Identifier `\mid_cnt[6]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:51: Warning: Identifier `\_051_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:52: Warning: Identifier `\mid_cnt[5]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:53: Warning: Identifier `\_052_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:54: Warning: Identifier `\mid_cnt[4]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:55: Warning: Identifier `\_053_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:56: Warning: Identifier `\mid_cnt[3]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:57: Warning: Identifier `\_054_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:58: Warning: Identifier `\mid_cnt[1]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:59: Warning: Identifier `\_055_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:60: Warning: Identifier `\mid_cnt[0]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:61: Warning: Identifier `\_056_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:62: Warning: Identifier `\mid_cnt[2]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:63: Warning: Identifier `\_057_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:67: Warning: Identifier `\_058_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:70: Warning: Identifier `\_059_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:74: Warning: Identifier `\_060_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:76: Warning: Identifier `\_061_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:78: Warning: Identifier `\_062_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:79: Warning: Identifier `\microsec_cnt[4]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:80: Warning: Identifier `\_063_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:81: Warning: Identifier `\microsec_cnt[1]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:82: Warning: Identifier `\_064_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:83: Warning: Identifier `\microsec_cnt[0]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:84: Warning: Identifier `\_065_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:85: Warning: Identifier `\microsec_cnt[3]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:86: Warning: Identifier `\_066_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:90: Warning: Identifier `\microsec_cnt[2]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:91: Warning: Identifier `\_067_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:93: Warning: Identifier `\_068_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:94: Warning: Identifier `\microsec_cnt[5]' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:97: Warning: Identifier `\_069_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:101: Warning: Identifier `\_070_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:103: Warning: Identifier `\_071_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:108: Warning: Identifier `\_072_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:113: Warning: Identifier `\_073_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:118: Warning: Identifier `\_002_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:119: Warning: Identifier `\_074_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:124: Warning: Identifier `\_075_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:127: Warning: Identifier `\_076_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:129: Warning: Identifier `\_077_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:134: Warning: Identifier `\_078_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:139: Warning: Identifier `\_020_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:143: Warning: Identifier `\_079_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:145: Warning: Identifier `\_080_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:151: Warning: Identifier `\_081_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:153: Warning: Identifier `\_019_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:155: Warning: Identifier `\_082_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:160: Warning: Identifier `\_083_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:165: Warning: Identifier `\_018_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:167: Warning: Identifier `\_084_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:170: Warning: Identifier `\_085_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:176: Warning: Identifier `\_086_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:178: Warning: Identifier `\_017_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:182: Warning: Identifier `\_022_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:188: Warning: Identifier `\_023_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:190: Warning: Identifier `\_016_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:195: Warning: Identifier `\_024_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:200: Warning: Identifier `\_015_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:205: Warning: Identifier `\_014_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:206: Warning: Identifier `\check_idle_n' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:207: Warning: Identifier `\_013_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:210: Warning: Identifier `\_025_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:215: Warning: Identifier `\_026_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:220: Warning: Identifier `\_012_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:223: Warning: Identifier `\_004_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:229: Warning: Identifier `\_011_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:231: Warning: Identifier `\_027_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:235: Warning: Identifier `\_028_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:238: Warning: Identifier `\_029_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:243: Warning: Identifier `\_030_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:247: Warning: Identifier `\_031_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:251: Warning: Identifier `\_032_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:254: Warning: Identifier `\_033_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:257: Warning: Identifier `\_034_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:263: Warning: Identifier `\_010_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:269: Warning: Identifier `\_009_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:274: Warning: Identifier `\_035_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:279: Warning: Identifier `\_008_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:284: Warning: Identifier `\_007_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:285: Warning: Identifier `\net12' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:286: Warning: Identifier `\net11' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:287: Warning: Identifier `\_036_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:289: Warning: Identifier `\_037_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:291: Warning: Identifier `\_038_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:297: Warning: Identifier `\net21' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:298: Warning: Identifier `\sync_sclsda_state.clk_copy' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:300: Warning: Identifier `\net14' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:301: Warning: Identifier `\_039_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:306: Warning: Identifier `\net10' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:307: Warning: Identifier `\_040_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:308: Warning: Identifier `\sync_idle_check.clk_copy' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:309: Warning: Identifier `\_041_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:311: Warning: Identifier `\_042_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:316: Warning: Identifier `\_006_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:317: Warning: Identifier `\sync_idle_check_n.clk_copy' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:318: Warning: Identifier `\_043_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:323: Warning: Identifier `\_005_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:328: Warning: Identifier `\_044_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:330: Warning: Identifier `\_001_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:334: Warning: Identifier `\_045_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:338: Warning: Identifier `\net23' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:339: Warning: Identifier `\net16' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:340: Warning: Identifier `\net15' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:341: Warning: Identifier `\sync_sclsda_state.scl_data' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:344: Warning: Identifier `\net19' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:348: Warning: Identifier `\net20' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:349: Warning: Identifier `\check_idle' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:353: Warning: Identifier `\_046_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:358: Warning: Identifier `\_047_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:362: Warning: Identifier `\_000_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:364: Warning: Identifier `\_021_' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:365: Warning: Identifier `\net22' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:372: Warning: Identifier `\net24' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:374: Warning: Identifier `\sync_idle_check.scl_data' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:376: Warning: Identifier `\net1' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:378: Warning: Identifier `\sync_idle_check_n.scl_data' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:541: Warning: Identifier `\net2' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:543: Warning: Identifier `\net3' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:545: Warning: Identifier `\net4' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:547: Warning: Identifier `\net5' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:549: Warning: Identifier `\net6' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:551: Warning: Identifier `\net7' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:553: Warning: Identifier `\net8' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:555: Warning: Identifier `\net9' is implicitly declared.
+/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v.without_power_pins.v:563: Warning: Identifier `\net13' is implicitly declared.
+Successfully finished Verilog frontend.
+
+3. Executing RMPORTS pass (remove ports with no connections).
+Finding unconnected ports in module \i3c_slow_counters
+  removing unused port \VGND
+  removing unused port \VPWR
+Removed 2 unused ports.
+Removing now-unused cell ports in module \i3c_slow_counters
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__tapvpwrvgnd_1
+Generate module for cell type \sky130_fd_sc_hd__tapvpwrvgnd_1:
+  module sky130_fd_sc_hd__tapvpwrvgnd_1 created.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__decap_*
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__fill_*
+
+7. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Finding top of design hierarchy..
+root of   1 design levels: i3c_slow_counters   
+Automatically selected i3c_slow_counters as design top module.
+
+8.2. Analyzing design hierarchy..
+Top module:  \i3c_slow_counters
+
+8.3. Analyzing design hierarchy..
+Top module:  \i3c_slow_counters
+Removed 0 unused modules.
+
+9. Executing FLATTEN pass (flatten design).
+
+10. Printing statistics.
+
+=== i3c_slow_counters ===
+
+   Number of wires:                161
+   Number of wire bits:            161
+   Number of public wires:         161
+   Number of public wire bits:     161
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                222
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a22o_1         3
+     sky130_fd_sc_hd__a2bb2o_1       1
+     sky130_fd_sc_hd__a31o_1         1
+     sky130_fd_sc_hd__a32o_1         2
+     sky130_fd_sc_hd__a41o_1         1
+     sky130_fd_sc_hd__and2_1         2
+     sky130_fd_sc_hd__and2b_1        1
+     sky130_fd_sc_hd__and3_1         4
+     sky130_fd_sc_hd__and4b_1        1
+     sky130_fd_sc_hd__buf_1         20
+     sky130_fd_sc_hd__buf_8          1
+     sky130_fd_sc_hd__clkbuf_1       6
+     sky130_fd_sc_hd__clkbuf_2       1
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__decap_3       40
+     sky130_fd_sc_hd__dfrtp_1       17
+     sky130_fd_sc_hd__dfrtp_4        4
+     sky130_fd_sc_hd__inv_2         29
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nor2_1         3
+     sky130_fd_sc_hd__nor3_1         1
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__o2111a_1       1
+     sky130_fd_sc_hd__o211a_1        1
+     sky130_fd_sc_hd__o211ai_1       1
+     sky130_fd_sc_hd__o21a_1         3
+     sky130_fd_sc_hd__o221a_1        1
+     sky130_fd_sc_hd__o221a_2        1
+     sky130_fd_sc_hd__o22a_1         5
+     sky130_fd_sc_hd__o22ai_1        2
+     sky130_fd_sc_hd__o2bb2a_1       3
+     sky130_fd_sc_hd__o32a_1         3
+     sky130_fd_sc_hd__or2_1          4
+     sky130_fd_sc_hd__or2_2          3
+     sky130_fd_sc_hd__or3_1          3
+     sky130_fd_sc_hd__or3_4          1
+     sky130_fd_sc_hd__or4_4          3
+     sky130_fd_sc_hd__or4b_4         1
+     sky130_fd_sc_hd__tapvpwrvgnd_1     44
+
+Renaming module i3c_slow_counters to gold.
+
+11. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+
+12. Executing Verilog-2005 frontend: /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis.v
+Parsing Verilog input from `/openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/results/synthesis/i3c_slow_counters.synthesis.v' to AST representation.
+Generating RTLIL representation for module `\i3c_slow_counters'.
+Successfully finished Verilog frontend.
+
+13. Executing RMPORTS pass (remove ports with no connections).
+Finding unconnected ports in module \i3c_slow_counters
+  removing unused port \cf_BAMatch
+Removed 1 unused ports.
+Removing now-unused cell ports in module \i3c_slow_counters
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__tapvpwrvgnd_1
+
+15. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__decap_*
+
+16. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__fill_*
+
+17. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+18. Executing HIERARCHY pass (managing design hierarchy).
+
+18.1. Finding top of design hierarchy..
+root of   1 design levels: i3c_slow_counters   
+Automatically selected i3c_slow_counters as design top module.
+
+18.2. Analyzing design hierarchy..
+Top module:  \i3c_slow_counters
+
+18.3. Analyzing design hierarchy..
+Top module:  \i3c_slow_counters
+Removed 0 unused modules.
+
+19. Executing FLATTEN pass (flatten design).
+
+20. Printing statistics.
+
+=== i3c_slow_counters ===
+
+   Number of wires:                135
+   Number of wire bits:            135
+   Number of public wires:         135
+   Number of public wire bits:     135
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a22o_2         3
+     sky130_fd_sc_hd__a2bb2o_2       1
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__a32o_2         2
+     sky130_fd_sc_hd__a41o_2         1
+     sky130_fd_sc_hd__and2_2         2
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and3_2         4
+     sky130_fd_sc_hd__and4b_2        1
+     sky130_fd_sc_hd__buf_1          4
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__dfrtp_2       21
+     sky130_fd_sc_hd__inv_2         29
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__nor3_2         2
+     sky130_fd_sc_hd__o2111a_2       1
+     sky130_fd_sc_hd__o211a_2        1
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_2         3
+     sky130_fd_sc_hd__o221a_2        2
+     sky130_fd_sc_hd__o22a_2         5
+     sky130_fd_sc_hd__o22ai_2        2
+     sky130_fd_sc_hd__o2bb2a_2       3
+     sky130_fd_sc_hd__o32a_2         3
+     sky130_fd_sc_hd__or2_2          7
+     sky130_fd_sc_hd__or3_2          4
+     sky130_fd_sc_hd__or4_2          3
+     sky130_fd_sc_hd__or4b_2         1
+
+Renaming module i3c_slow_counters to gate.
+
+21. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+
+22. Executing EQUIV_MAKE pass (creating equiv checking module).
+Presumably equivalent wires: event_pending[0]_gold (\event_pending[0]_gold), event_pending[0]_gate (\event_pending[0]_gate) -> event_pending[0]
+Presumably equivalent wires: cf_BAMatch[7]_gold (\cf_BAMatch[7]_gold), cf_BAMatch[7]_gate (\cf_BAMatch[7]_gate) -> cf_BAMatch[7]
+Presumably equivalent wires: cf_BAMatch[6]_gold (\cf_BAMatch[6]_gold), cf_BAMatch[6]_gate (\cf_BAMatch[6]_gate) -> cf_BAMatch[6]
+Presumably equivalent wires: cf_BAMatch[5]_gold (\cf_BAMatch[5]_gold), cf_BAMatch[5]_gate (\cf_BAMatch[5]_gate) -> cf_BAMatch[5]
+Presumably equivalent wires: cf_BAMatch[4]_gold (\cf_BAMatch[4]_gold), cf_BAMatch[4]_gate (\cf_BAMatch[4]_gate) -> cf_BAMatch[4]
+Presumably equivalent wires: cf_BAMatch[3]_gold (\cf_BAMatch[3]_gold), cf_BAMatch[3]_gate (\cf_BAMatch[3]_gate) -> cf_BAMatch[3]
+Presumably equivalent wires: cf_BAMatch[2]_gold (\cf_BAMatch[2]_gold), cf_BAMatch[2]_gate (\cf_BAMatch[2]_gate) -> cf_BAMatch[2]
+Presumably equivalent wires: cf_BAMatch[1]_gold (\cf_BAMatch[1]_gold), cf_BAMatch[1]_gate (\cf_BAMatch[1]_gate) -> cf_BAMatch[1]
+Presumably equivalent wires: cf_BAMatch[0]_gold (\cf_BAMatch[0]_gold), cf_BAMatch[0]_gate (\cf_BAMatch[0]_gate) -> cf_BAMatch[0]
+Presumably equivalent wires: sync_idle_check_n.scl_data_gold (\sync_idle_check_n.scl_data_gold), sync_idle_check_n.scl_data_gate (\sync_idle_check_n.scl_data_gate) -> sync_idle_check_n.scl_data
+Presumably equivalent wires: sync_idle_check.scl_data_gold (\sync_idle_check.scl_data_gold), sync_idle_check.scl_data_gate (\sync_idle_check.scl_data_gate) -> sync_idle_check.scl_data
+Presumably equivalent wires: _021__gold (\_021__gold), _021__gate (\_021__gate) -> _021_
+Presumably equivalent wires: _000__gold (\_000__gold), _000__gate (\_000__gate) -> _000_
+Presumably equivalent wires: _047__gold (\_047__gold), _047__gate (\_047__gate) -> _047_
+Presumably equivalent wires: _046__gold (\_046__gold), _046__gate (\_046__gate) -> _046_
+Presumably equivalent wires: check_idle_gold (\check_idle_gold), check_idle_gate (\check_idle_gate) -> check_idle
+Presumably equivalent wires: sync_sclsda_state.scl_data_gold (\sync_sclsda_state.scl_data_gold), sync_sclsda_state.scl_data_gate (\sync_sclsda_state.scl_data_gate) -> sync_sclsda_state.scl_data
+Presumably equivalent wires: _045__gold (\_045__gold), _045__gate (\_045__gate) -> _045_
+Presumably equivalent wires: _001__gold (\_001__gold), _001__gate (\_001__gate) -> _001_
+Presumably equivalent wires: _044__gold (\_044__gold), _044__gate (\_044__gate) -> _044_
+Presumably equivalent wires: _005__gold (\_005__gold), _005__gate (\_005__gate) -> _005_
+Presumably equivalent wires: _043__gold (\_043__gold), _043__gate (\_043__gate) -> _043_
+Presumably equivalent wires: sync_idle_check_n.clk_copy_gold (\sync_idle_check_n.clk_copy_gold), sync_idle_check_n.clk_copy_gate (\sync_idle_check_n.clk_copy_gate) -> sync_idle_check_n.clk_copy
+Presumably equivalent wires: _006__gold (\_006__gold), _006__gate (\_006__gate) -> _006_
+Presumably equivalent wires: _042__gold (\_042__gold), _042__gate (\_042__gate) -> _042_
+Presumably equivalent wires: _041__gold (\_041__gold), _041__gate (\_041__gate) -> _041_
+Presumably equivalent wires: sync_idle_check.clk_copy_gold (\sync_idle_check.clk_copy_gold), sync_idle_check.clk_copy_gate (\sync_idle_check.clk_copy_gate) -> sync_idle_check.clk_copy
+Presumably equivalent wires: _040__gold (\_040__gold), _040__gate (\_040__gate) -> _040_
+Presumably equivalent wires: _039__gold (\_039__gold), _039__gate (\_039__gate) -> _039_
+Presumably equivalent wires: sync_sclsda_state.clk_copy_gold (\sync_sclsda_state.clk_copy_gold), sync_sclsda_state.clk_copy_gate (\sync_sclsda_state.clk_copy_gate) -> sync_sclsda_state.clk_copy
+Presumably equivalent wires: _038__gold (\_038__gold), _038__gate (\_038__gate) -> _038_
+Presumably equivalent wires: _037__gold (\_037__gold), _037__gate (\_037__gate) -> _037_
+Presumably equivalent wires: _036__gold (\_036__gold), _036__gate (\_036__gate) -> _036_
+Presumably equivalent wires: _007__gold (\_007__gold), _007__gate (\_007__gate) -> _007_
+Presumably equivalent wires: _008__gold (\_008__gold), _008__gate (\_008__gate) -> _008_
+Presumably equivalent wires: _035__gold (\_035__gold), _035__gate (\_035__gate) -> _035_
+Presumably equivalent wires: _009__gold (\_009__gold), _009__gate (\_009__gate) -> _009_
+Presumably equivalent wires: _010__gold (\_010__gold), _010__gate (\_010__gate) -> _010_
+Presumably equivalent wires: _034__gold (\_034__gold), _034__gate (\_034__gate) -> _034_
+Presumably equivalent wires: _033__gold (\_033__gold), _033__gate (\_033__gate) -> _033_
+Presumably equivalent wires: _032__gold (\_032__gold), _032__gate (\_032__gate) -> _032_
+Presumably equivalent wires: _031__gold (\_031__gold), _031__gate (\_031__gate) -> _031_
+Presumably equivalent wires: _030__gold (\_030__gold), _030__gate (\_030__gate) -> _030_
+Presumably equivalent wires: _029__gold (\_029__gold), _029__gate (\_029__gate) -> _029_
+Presumably equivalent wires: _028__gold (\_028__gold), _028__gate (\_028__gate) -> _028_
+Presumably equivalent wires: _027__gold (\_027__gold), _027__gate (\_027__gate) -> _027_
+Presumably equivalent wires: _011__gold (\_011__gold), _011__gate (\_011__gate) -> _011_
+Presumably equivalent wires: _004__gold (\_004__gold), _004__gate (\_004__gate) -> _004_
+Presumably equivalent wires: _012__gold (\_012__gold), _012__gate (\_012__gate) -> _012_
+Presumably equivalent wires: _026__gold (\_026__gold), _026__gate (\_026__gate) -> _026_
+Presumably equivalent wires: _025__gold (\_025__gold), _025__gate (\_025__gate) -> _025_
+Presumably equivalent wires: _013__gold (\_013__gold), _013__gate (\_013__gate) -> _013_
+Presumably equivalent wires: check_idle_n_gold (\check_idle_n_gold), check_idle_n_gate (\check_idle_n_gate) -> check_idle_n
+Presumably equivalent wires: _014__gold (\_014__gold), _014__gate (\_014__gate) -> _014_
+Presumably equivalent wires: _015__gold (\_015__gold), _015__gate (\_015__gate) -> _015_
+Presumably equivalent wires: _024__gold (\_024__gold), _024__gate (\_024__gate) -> _024_
+Presumably equivalent wires: _016__gold (\_016__gold), _016__gate (\_016__gate) -> _016_
+Presumably equivalent wires: _023__gold (\_023__gold), _023__gate (\_023__gate) -> _023_
+Presumably equivalent wires: _022__gold (\_022__gold), _022__gate (\_022__gate) -> _022_
+Presumably equivalent wires: _017__gold (\_017__gold), _017__gate (\_017__gate) -> _017_
+Presumably equivalent wires: _086__gold (\_086__gold), _086__gate (\_086__gate) -> _086_
+Presumably equivalent wires: _085__gold (\_085__gold), _085__gate (\_085__gate) -> _085_
+Presumably equivalent wires: _084__gold (\_084__gold), _084__gate (\_084__gate) -> _084_
+Presumably equivalent wires: _018__gold (\_018__gold), _018__gate (\_018__gate) -> _018_
+Presumably equivalent wires: _083__gold (\_083__gold), _083__gate (\_083__gate) -> _083_
+Presumably equivalent wires: _082__gold (\_082__gold), _082__gate (\_082__gate) -> _082_
+Presumably equivalent wires: _019__gold (\_019__gold), _019__gate (\_019__gate) -> _019_
+Presumably equivalent wires: _081__gold (\_081__gold), _081__gate (\_081__gate) -> _081_
+Presumably equivalent wires: _080__gold (\_080__gold), _080__gate (\_080__gate) -> _080_
+Presumably equivalent wires: _079__gold (\_079__gold), _079__gate (\_079__gate) -> _079_
+Presumably equivalent wires: _020__gold (\_020__gold), _020__gate (\_020__gate) -> _020_
+Presumably equivalent wires: _078__gold (\_078__gold), _078__gate (\_078__gate) -> _078_
+Presumably equivalent wires: _077__gold (\_077__gold), _077__gate (\_077__gate) -> _077_
+Presumably equivalent wires: _076__gold (\_076__gold), _076__gate (\_076__gate) -> _076_
+Presumably equivalent wires: _075__gold (\_075__gold), _075__gate (\_075__gate) -> _075_
+Presumably equivalent wires: _074__gold (\_074__gold), _074__gate (\_074__gate) -> _074_
+Presumably equivalent wires: _002__gold (\_002__gold), _002__gate (\_002__gate) -> _002_
+Presumably equivalent wires: _073__gold (\_073__gold), _073__gate (\_073__gate) -> _073_
+Presumably equivalent wires: _072__gold (\_072__gold), _072__gate (\_072__gate) -> _072_
+Presumably equivalent wires: _071__gold (\_071__gold), _071__gate (\_071__gate) -> _071_
+Presumably equivalent wires: _070__gold (\_070__gold), _070__gate (\_070__gate) -> _070_
+Presumably equivalent wires: _069__gold (\_069__gold), _069__gate (\_069__gate) -> _069_
+Presumably equivalent wires: microsec_cnt[5]_gold (\microsec_cnt[5]_gold), microsec_cnt[5]_gate (\microsec_cnt[5]_gate) -> microsec_cnt[5]
+Presumably equivalent wires: _068__gold (\_068__gold), _068__gate (\_068__gate) -> _068_
+Presumably equivalent wires: _067__gold (\_067__gold), _067__gate (\_067__gate) -> _067_
+Presumably equivalent wires: microsec_cnt[2]_gold (\microsec_cnt[2]_gold), microsec_cnt[2]_gate (\microsec_cnt[2]_gate) -> microsec_cnt[2]
+Presumably equivalent wires: _066__gold (\_066__gold), _066__gate (\_066__gate) -> _066_
+Presumably equivalent wires: microsec_cnt[3]_gold (\microsec_cnt[3]_gold), microsec_cnt[3]_gate (\microsec_cnt[3]_gate) -> microsec_cnt[3]
+Presumably equivalent wires: _065__gold (\_065__gold), _065__gate (\_065__gate) -> _065_
+Presumably equivalent wires: microsec_cnt[0]_gold (\microsec_cnt[0]_gold), microsec_cnt[0]_gate (\microsec_cnt[0]_gate) -> microsec_cnt[0]
+Presumably equivalent wires: _064__gold (\_064__gold), _064__gate (\_064__gate) -> _064_
+Presumably equivalent wires: microsec_cnt[1]_gold (\microsec_cnt[1]_gold), microsec_cnt[1]_gate (\microsec_cnt[1]_gate) -> microsec_cnt[1]
+Presumably equivalent wires: _063__gold (\_063__gold), _063__gate (\_063__gate) -> _063_
+Presumably equivalent wires: microsec_cnt[4]_gold (\microsec_cnt[4]_gold), microsec_cnt[4]_gate (\microsec_cnt[4]_gate) -> microsec_cnt[4]
+Presumably equivalent wires: _062__gold (\_062__gold), _062__gate (\_062__gate) -> _062_
+Presumably equivalent wires: _061__gold (\_061__gold), _061__gate (\_061__gate) -> _061_
+Presumably equivalent wires: _060__gold (\_060__gold), _060__gate (\_060__gate) -> _060_
+Presumably equivalent wires: _059__gold (\_059__gold), _059__gate (\_059__gate) -> _059_
+Presumably equivalent wires: _058__gold (\_058__gold), _058__gate (\_058__gate) -> _058_
+Presumably equivalent wires: _057__gold (\_057__gold), _057__gate (\_057__gate) -> _057_
+Presumably equivalent wires: mid_cnt[2]_gold (\mid_cnt[2]_gold), mid_cnt[2]_gate (\mid_cnt[2]_gate) -> mid_cnt[2]
+Presumably equivalent wires: _056__gold (\_056__gold), _056__gate (\_056__gate) -> _056_
+Presumably equivalent wires: mid_cnt[0]_gold (\mid_cnt[0]_gold), mid_cnt[0]_gate (\mid_cnt[0]_gate) -> mid_cnt[0]
+Presumably equivalent wires: _055__gold (\_055__gold), _055__gate (\_055__gate) -> _055_
+Presumably equivalent wires: mid_cnt[1]_gold (\mid_cnt[1]_gold), mid_cnt[1]_gate (\mid_cnt[1]_gate) -> mid_cnt[1]
+Presumably equivalent wires: _054__gold (\_054__gold), _054__gate (\_054__gate) -> _054_
+Presumably equivalent wires: mid_cnt[3]_gold (\mid_cnt[3]_gold), mid_cnt[3]_gate (\mid_cnt[3]_gate) -> mid_cnt[3]
+Presumably equivalent wires: _053__gold (\_053__gold), _053__gate (\_053__gate) -> _053_
+Presumably equivalent wires: mid_cnt[4]_gold (\mid_cnt[4]_gold), mid_cnt[4]_gate (\mid_cnt[4]_gate) -> mid_cnt[4]
+Presumably equivalent wires: _052__gold (\_052__gold), _052__gate (\_052__gate) -> _052_
+Presumably equivalent wires: mid_cnt[5]_gold (\mid_cnt[5]_gold), mid_cnt[5]_gate (\mid_cnt[5]_gate) -> mid_cnt[5]
+Presumably equivalent wires: _051__gold (\_051__gold), _051__gate (\_051__gate) -> _051_
+Presumably equivalent wires: mid_cnt[6]_gold (\mid_cnt[6]_gold), mid_cnt[6]_gate (\mid_cnt[6]_gate) -> mid_cnt[6]
+Presumably equivalent wires: _050__gold (\_050__gold), _050__gate (\_050__gate) -> _050_
+Presumably equivalent wires: _003__gold (\_003__gold), _003__gate (\_003__gate) -> _003_
+Presumably equivalent wires: _049__gold (\_049__gold), _049__gate (\_049__gate) -> _049_
+Presumably equivalent wires: _048__gold (\_048__gold), _048__gate (\_048__gate) -> _048_
+Presumably equivalent wires: request_start_gold (\request_start_gold), request_start_gate (\request_start_gate) -> request_start
+Presumably equivalent wires: event_pending[2]_gold (\event_pending[2]_gold), event_pending[2]_gate (\event_pending[2]_gate) -> event_pending[2]
+Presumably equivalent wires: event_pending[1]_gold (\event_pending[1]_gold), event_pending[1]_gate (\event_pending[1]_gate) -> event_pending[1]
+Presumably equivalent wires: slow_gate_gold (\slow_gate_gold), slow_gate_gate (\slow_gate_gate) -> slow_gate
+Presumably equivalent wires: run_60_gold (\run_60_gold), run_60_gate (\run_60_gate) -> run_60
+Presumably equivalent wires: run_100_gold (\run_100_gold), run_100_gate (\run_100_gate) -> run_100
+Presumably equivalent wires: pin_SDA_in_gold (\pin_SDA_in_gold), pin_SDA_in_gate (\pin_SDA_in_gate) -> pin_SDA_in
+Presumably equivalent wires: pin_SCL_in_gold (\pin_SCL_in_gold), pin_SCL_in_gate (\pin_SCL_in_gate) -> pin_SCL_in
+Presumably equivalent wires: int_in_STOP_gold (\int_in_STOP_gold), int_in_STOP_gate (\int_in_STOP_gate) -> int_in_STOP
+Presumably equivalent wires: hold_engine_gold (\hold_engine_gold), hold_engine_gate (\hold_engine_gate) -> hold_engine
+Presumably equivalent wires: force_sda_gold (\force_sda_gold), force_sda_gate (\force_sda_gate) -> force_sda
+Presumably equivalent wires: done_60_gold (\done_60_gold), done_60_gate (\done_60_gate) -> done_60
+Presumably equivalent wires: done_100_gold (\done_100_gold), done_100_gate (\done_100_gate) -> done_100
+Presumably equivalent wires: clk_SCL_n_gold (\clk_SCL_n_gold), clk_SCL_n_gate (\clk_SCL_n_gate) -> clk_SCL_n
+Presumably equivalent wires: clk_SCL_gold (\clk_SCL_gold), clk_SCL_gate (\clk_SCL_gate) -> clk_SCL
+Presumably equivalent wires: cf_SlvEna_gold (\cf_SlvEna_gold), cf_SlvEna_gate (\cf_SlvEna_gate) -> cf_SlvEna
+Presumably equivalent wires: RSTn_gold (\RSTn_gold), RSTn_gate (\RSTn_gate) -> RSTn
+Presumably equivalent wires: CLK_SLOW_gold (\CLK_SLOW_gold), CLK_SLOW_gate (\CLK_SLOW_gate) -> CLK_SLOW
+Presumably equivalent cells: _179__gold _179__gate (sky130_fd_sc_hd__mux2_1) -> _179_
+Presumably equivalent cells: _178__gold _178__gate (sky130_fd_sc_hd__conb_1) -> _178_
+Presumably equivalent cells: _170__gold _170__gate (sky130_fd_sc_hd__nor3_2) -> _170_
+Presumably equivalent cells: _168__gold _168__gate (sky130_fd_sc_hd__inv_2) -> _168_
+Presumably equivalent cells: _165__gold _165__gate (sky130_fd_sc_hd__inv_2) -> _165_
+Presumably equivalent cells: _163__gold _163__gate (sky130_fd_sc_hd__inv_2) -> _163_
+Presumably equivalent cells: _162__gold _162__gate (sky130_fd_sc_hd__inv_2) -> _162_
+Presumably equivalent cells: _161__gold _161__gate (sky130_fd_sc_hd__o221a_2) -> _161_
+Presumably equivalent cells: _158__gold _158__gate (sky130_fd_sc_hd__inv_2) -> _158_
+Presumably equivalent cells: _157__gold _157__gate (sky130_fd_sc_hd__inv_2) -> _157_
+Presumably equivalent cells: _148__gold _148__gate (sky130_fd_sc_hd__a21oi_2) -> _148_
+Presumably equivalent cells: _145__gold _145__gate (sky130_fd_sc_hd__or2_2) -> _145_
+Presumably equivalent cells: _143__gold _143__gate (sky130_fd_sc_hd__buf_1) -> _143_
+Presumably equivalent cells: _133__gold _133__gate (sky130_fd_sc_hd__inv_2) -> _133_
+Presumably equivalent cells: _130__gold _130__gate (sky130_fd_sc_hd__inv_2) -> _130_
+Presumably equivalent cells: _127__gold _127__gate (sky130_fd_sc_hd__inv_2) -> _127_
+Presumably equivalent cells: _124__gold _124__gate (sky130_fd_sc_hd__inv_2) -> _124_
+Presumably equivalent cells: _123__gold _123__gate (sky130_fd_sc_hd__inv_2) -> _123_
+Presumably equivalent cells: _121__gold _121__gate (sky130_fd_sc_hd__inv_2) -> _121_
+Presumably equivalent cells: _117__gold _117__gate (sky130_fd_sc_hd__buf_1) -> _117_
+Presumably equivalent cells: _111__gold _111__gate (sky130_fd_sc_hd__inv_2) -> _111_
+Presumably equivalent cells: _108__gold _108__gate (sky130_fd_sc_hd__inv_2) -> _108_
+Presumably equivalent cells: _106__gold _106__gate (sky130_fd_sc_hd__inv_2) -> _106_
+Presumably equivalent cells: _105__gold _105__gate (sky130_fd_sc_hd__inv_2) -> _105_
+Presumably equivalent cells: _104__gold _104__gate (sky130_fd_sc_hd__inv_2) -> _104_
+Presumably equivalent cells: _103__gold _103__gate (sky130_fd_sc_hd__inv_2) -> _103_
+Presumably equivalent cells: _102__gold _102__gate (sky130_fd_sc_hd__inv_2) -> _102_
+Presumably equivalent cells: _101__gold _101__gate (sky130_fd_sc_hd__inv_2) -> _101_
+Presumably equivalent cells: _099__gold _099__gate (sky130_fd_sc_hd__or2_2) -> _099_
+Presumably equivalent cells: _097__gold _097__gate (sky130_fd_sc_hd__inv_2) -> _097_
+Presumably equivalent cells: _096__gold _096__gate (sky130_fd_sc_hd__inv_2) -> _096_
+Presumably equivalent cells: _095__gold _095__gate (sky130_fd_sc_hd__inv_2) -> _095_
+Presumably equivalent cells: _094__gold _094__gate (sky130_fd_sc_hd__inv_2) -> _094_
+Presumably equivalent cells: _093__gold _093__gate (sky130_fd_sc_hd__inv_2) -> _093_
+Presumably equivalent cells: _092__gold _092__gate (sky130_fd_sc_hd__inv_2) -> _092_
+Presumably equivalent cells: _091__gold _091__gate (sky130_fd_sc_hd__inv_2) -> _091_
+Presumably equivalent cells: _089__gold _089__gate (sky130_fd_sc_hd__inv_2) -> _089_
+Presumably equivalent cells: _088__gold _088__gate (sky130_fd_sc_hd__or2_2) -> _088_
+Presumably equivalent cells: _087__gold _087__gate (sky130_fd_sc_hd__inv_2) -> _087_
+Setting undriven nets to undef: \VPWR_gold
+Setting undriven nets to undef: \VGND_gold
+
+23. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__tapvpwrvgnd_1
+Generate module for cell type \sky130_fd_sc_hd__tapvpwrvgnd_1:
+  module sky130_fd_sc_hd__tapvpwrvgnd_1 created.
+
+24. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__decap_*
+
+25. Executing HIERARCHY pass (managing design hierarchy).
+Entering generate mode.
+Celltype: sky130_fd_sc_hd__fill_*
+
+26. Executing PREP pass.
+
+26.1. Executing HIERARCHY pass (managing design hierarchy).
+
+26.1.1. Analyzing design hierarchy..
+Top module:  \equiv
+
+26.1.2. Analyzing design hierarchy..
+Top module:  \equiv
+Removing unused module `\gate'.
+Removing unused module `\gold'.
+Removed 2 unused modules.
+
+26.2. Executing PROC pass (convert processes to netlists).
+
+26.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+26.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+26.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+26.2.4. Executing PROC_INIT pass (extract init attributes).
+
+26.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+26.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+26.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+26.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+
+26.2.9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+26.3. Executing FLATTEN pass (flatten design).
+
+26.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module equiv.
+
+26.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \equiv..
+
+26.6. Executing CHECK pass (checking for obvious problems).
+checking module equiv..
+found and reported 0 problems.
+
+26.7. Executing OPT pass (performing simple optimizations).
+
+26.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module equiv.
+
+26.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\equiv'.
+Removed a total of 0 cells.
+
+26.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \equiv..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+26.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \equiv.
+Performed a total of 0 changes.
+
+26.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\equiv'.
+Removed a total of 0 cells.
+
+26.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \equiv..
+
+26.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module equiv.
+
+26.7.8. Finished OPT passes. (There is nothing left to do.)
+
+26.8. Executing WREDUCE pass (reducing word size of cells).
+
+26.9. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+26.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \equiv..
+
+26.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+26.12. Executing OPT pass (performing simple optimizations).
+
+26.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module equiv.
+
+26.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\equiv'.
+Removed a total of 0 cells.
+
+26.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \equiv..
+
+26.12.4. Finished fast OPT passes.
+
+26.13. Printing statistics.
+
+=== equiv ===
+
+   Number of wires:                482
+   Number of wire bits:            482
+   Number of public wires:         431
+   Number of public wire bits:     431
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                462
+     $equiv                        165
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a22o_1         3
+     sky130_fd_sc_hd__a22o_2         3
+     sky130_fd_sc_hd__a2bb2o_1       1
+     sky130_fd_sc_hd__a2bb2o_2       1
+     sky130_fd_sc_hd__a31o_1         1
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__a32o_1         2
+     sky130_fd_sc_hd__a32o_2         2
+     sky130_fd_sc_hd__a41o_1         1
+     sky130_fd_sc_hd__a41o_2         1
+     sky130_fd_sc_hd__and2_1         2
+     sky130_fd_sc_hd__and2_2         2
+     sky130_fd_sc_hd__and2b_1        1
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and3_1         4
+     sky130_fd_sc_hd__and3_2         4
+     sky130_fd_sc_hd__and4b_1        1
+     sky130_fd_sc_hd__and4b_2        1
+     sky130_fd_sc_hd__buf_1         22
+     sky130_fd_sc_hd__buf_8          1
+     sky130_fd_sc_hd__clkbuf_1       6
+     sky130_fd_sc_hd__clkbuf_2       1
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__decap_3       40
+     sky130_fd_sc_hd__dfrtp_1       17
+     sky130_fd_sc_hd__dfrtp_2       21
+     sky130_fd_sc_hd__dfrtp_4        4
+     sky130_fd_sc_hd__inv_2         29
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nor2_1         3
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__nor3_1         1
+     sky130_fd_sc_hd__nor3_2         2
+     sky130_fd_sc_hd__o2111a_1       1
+     sky130_fd_sc_hd__o2111a_2       1
+     sky130_fd_sc_hd__o211a_1        1
+     sky130_fd_sc_hd__o211a_2        1
+     sky130_fd_sc_hd__o211ai_1       1
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_1         3
+     sky130_fd_sc_hd__o21a_2         3
+     sky130_fd_sc_hd__o221a_1        1
+     sky130_fd_sc_hd__o221a_2        2
+     sky130_fd_sc_hd__o22a_1         5
+     sky130_fd_sc_hd__o22a_2         5
+     sky130_fd_sc_hd__o22ai_1        2
+     sky130_fd_sc_hd__o22ai_2        2
+     sky130_fd_sc_hd__o2bb2a_1       3
+     sky130_fd_sc_hd__o2bb2a_2       3
+     sky130_fd_sc_hd__o32a_1         3
+     sky130_fd_sc_hd__o32a_2         3
+     sky130_fd_sc_hd__or2_1          4
+     sky130_fd_sc_hd__or2_2          7
+     sky130_fd_sc_hd__or3_1          3
+     sky130_fd_sc_hd__or3_2          4
+     sky130_fd_sc_hd__or3_4          1
+     sky130_fd_sc_hd__or4_2          3
+     sky130_fd_sc_hd__or4_4          3
+     sky130_fd_sc_hd__or4b_2         1
+     sky130_fd_sc_hd__or4b_4         1
+     sky130_fd_sc_hd__tapvpwrvgnd_1     44
+
+26.14. Executing CHECK pass (checking for obvious problems).
+checking module equiv..
+found and reported 0 problems.
+
+27. Executing EQUIV_SIMPLE pass.
+Found 117 unproven $equiv cells (117 groups) in equiv:
+  Trying to prove $equiv cell $auto$equiv_make.cc:251:find_same_wires$114:
+    A = \done_100_gold, B = \done_100_gate, Y = \done_100
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:251:find_same_wires$113:
+    A = \done_60_gold, B = \done_60_gate, Y = \done_60
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:251:find_same_wires$112:
+    A = \force_sda_gold, B = \force_sda_gate, Y = \force_sda
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:251:find_same_wires$111:
+    A = \hold_engine_gold, B = \hold_engine_gate, Y = \hold_engine
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:251:find_same_wires$110:
+    A = \slow_gate_gold, B = \net23_gold, Y = \slow_gate
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$109:
+    A = \request_start_gold, B = \request_start_gate, Y = \request_start
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$105:
+    A = \_050__gold, B = \_050__gate, Y = \_050_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$104:
+    A = \mid_cnt[6]_gold, B = \mid_cnt[6]_gate, Y = \mid_cnt[6]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$102:
+    A = \mid_cnt[5]_gold, B = \mid_cnt[5]_gate, Y = \mid_cnt[5]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$100:
+    A = \mid_cnt[4]_gold, B = \mid_cnt[4]_gate, Y = \mid_cnt[4]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$98:
+    A = \mid_cnt[3]_gold, B = \mid_cnt[3]_gate, Y = \mid_cnt[3]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$96:
+    A = \mid_cnt[1]_gold, B = \mid_cnt[1]_gate, Y = \mid_cnt[1]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$94:
+    A = \mid_cnt[0]_gold, B = \mid_cnt[0]_gate, Y = \mid_cnt[0]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$92:
+    A = \mid_cnt[2]_gold, B = \mid_cnt[2]_gate, Y = \mid_cnt[2]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$90:
+    A = \_058__gold, B = \_058__gate, Y = \_058_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$88:
+    A = \_060__gold, B = \_060__gate, Y = \_060_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$85:
+    A = \microsec_cnt[4]_gold, B = \microsec_cnt[4]_gate, Y = \microsec_cnt[4]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$83:
+    A = \microsec_cnt[1]_gold, B = \microsec_cnt[1]_gate, Y = \microsec_cnt[1]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$81:
+    A = \microsec_cnt[0]_gold, B = \microsec_cnt[0]_gate, Y = \microsec_cnt[0]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$79:
+    A = \microsec_cnt[3]_gold, B = \microsec_cnt[3]_gate, Y = \microsec_cnt[3]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$77:
+    A = \microsec_cnt[2]_gold, B = \microsec_cnt[2]_gate, Y = \microsec_cnt[2]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$76:
+    A = \_067__gold, B = \_067__gate, Y = \_067_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$74:
+    A = \microsec_cnt[5]_gold, B = \microsec_cnt[5]_gate, Y = \microsec_cnt[5]
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$73:
+    A = \_069__gold, B = \_069__gate, Y = \_069_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$72:
+    A = \_070__gold, B = \_070__gate, Y = \_070_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$70:
+    A = \_072__gold, B = \_072__gate, Y = \_072_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$69:
+    A = \_073__gold, B = \_073__gate, Y = \_073_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$67:
+    A = \_074__gold, B = \_074__gate, Y = \_074_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$66:
+    A = \_075__gold, B = \_075__gate, Y = \_075_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$65:
+    A = \_076__gold, B = \_076__gate, Y = \_076_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$63:
+    A = \_078__gold, B = \_078__gate, Y = \_078_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$62:
+    A = \_020__gold, B = \_020__gate, Y = \_020_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$61:
+    A = \_079__gold, B = \_079__gate, Y = \_079_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$59:
+    A = \_081__gold, B = \_081__gate, Y = \_081_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$56:
+    A = \_083__gold, B = \_083__gate, Y = \_083_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$55:
+    A = \_018__gold, B = \_018__gate, Y = \_018_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$53:
+    A = \_085__gold, B = \_085__gate, Y = \_085_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$52:
+    A = \_086__gold, B = \_086__gate, Y = \_086_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$50:
+    A = \_022__gold, B = \_022__gate, Y = \_022_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$49:
+    A = \_023__gold, B = \_023__gate, Y = \_023_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$47:
+    A = \_024__gold, B = \_024__gate, Y = \_024_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$46:
+    A = \_015__gold, B = \_015__gate, Y = \_015_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$45:
+    A = \_014__gold, B = \_014__gate, Y = \_014_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$44:
+    A = \check_idle_n_gold, B = \check_idle_n_gate, Y = \check_idle_n
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$43:
+    A = \_013__gold, B = \_013__gate, Y = \_013_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$42:
+    A = \_025__gold, B = \_025__gate, Y = \_025_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$41:
+    A = \_026__gold, B = \_026__gate, Y = \_026_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$40:
+    A = \_012__gold, B = \_012__gate, Y = \_012_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$39:
+    A = \_004__gold, B = \_004__gate, Y = \_004_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$38:
+    A = \_011__gold, B = \_011__gate, Y = \_011_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$36:
+    A = \_028__gold, B = \_028__gate, Y = \_028_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$34:
+    A = \_030__gold, B = \_030__gate, Y = \_030_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$33:
+    A = \_031__gold, B = \_031__gate, Y = \_031_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$31:
+    A = \_033__gold, B = \_033__gate, Y = \_033_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$30:
+    A = \_034__gold, B = \_034__gate, Y = \_034_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$29:
+    A = \_010__gold, B = \_010__gate, Y = \_010_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$28:
+    A = \_009__gold, B = \_009__gate, Y = \_009_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$27:
+    A = \_035__gold, B = \_035__gate, Y = \_035_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$26:
+    A = \_008__gold, B = \_008__gate, Y = \_008_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$25:
+    A = \_007__gold, B = \_007__gate, Y = \_007_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$24:
+    A = \_036__gold, B = \_036__gate, Y = \_036_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$21:
+    A = \sync_sclsda_state.clk_copy_gold, B = \sync_sclsda_state.clk_copy_gate, Y = \sync_sclsda_state.clk_copy
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$20:
+    A = \_039__gold, B = \_039__gate, Y = \_039_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$18:
+    A = \sync_idle_check.clk_copy_gold, B = \sync_idle_check.clk_copy_gate, Y = \sync_idle_check.clk_copy
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$15:
+    A = \_006__gold, B = \_006__gate, Y = \_006_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$14:
+    A = \sync_idle_check_n.clk_copy_gold, B = \sync_idle_check_n.clk_copy_gate, Y = \sync_idle_check_n.clk_copy
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$12:
+    A = \_005__gold, B = \_005__gate, Y = \_005_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$11:
+    A = \_044__gold, B = \_044__gate, Y = \_044_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$9:
+    A = \_045__gold, B = \_045__gate, Y = \_045_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$8:
+    A = \sync_sclsda_state.scl_data_gold, B = \sync_sclsda_state.scl_data_gate, Y = \sync_sclsda_state.scl_data
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$7:
+    A = \check_idle_gold, B = \check_idle_gate, Y = \check_idle
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$6:
+    A = \_046__gold, B = \_046__gate, Y = \_046_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$5:
+    A = \_047__gold, B = \_047__gate, Y = \_047_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$4:
+    A = \_000__gold, B = \_000__gate, Y = \_000_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$3:
+    A = \_021__gold, B = \_021__gate, Y = \_021_
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$2:
+    A = \sync_idle_check.scl_data_gold, B = \sync_idle_check.scl_data_gate, Y = \sync_idle_check.scl_data
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:280:find_same_wires$1:
+    A = \sync_idle_check_n.scl_data_gold, B = \sync_idle_check_n.scl_data_gate, Y = \sync_idle_check_n.scl_data
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$216:
+    A = \request_start_gold, B = \request_start_gate, Y = $auto$equiv_make.cc:358:find_same_cells$215
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$212:
+    A = \net18_gold, B = \run_60, Y = $auto$equiv_make.cc:358:find_same_cells$211
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$208:
+    A = \mid_cnt[6]_gold, B = \mid_cnt[6]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$207
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$206:
+    A = \mid_cnt[5]_gold, B = \mid_cnt[5]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$205
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$204:
+    A = \mid_cnt[4]_gold, B = \mid_cnt[4]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$203
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$202:
+    A = \mid_cnt[3]_gold, B = \mid_cnt[3]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$201
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$200:
+    A = \mid_cnt[1]_gold, B = \mid_cnt[1]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$199
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$198:
+    A = \mid_cnt[0]_gold, B = \mid_cnt[0]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$197
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$196:
+    A = \mid_cnt[2]_gold, B = \mid_cnt[2]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$195
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$192:
+    A = \_058__gold, B = \_058__gate, Y = $auto$equiv_make.cc:358:find_same_cells$191
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$190:
+    A = \_060__gold, B = \_060__gate, Y = $auto$equiv_make.cc:358:find_same_cells$189
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$188:
+    A = \_050__gold, B = \_050__gate, Y = $auto$equiv_make.cc:358:find_same_cells$187
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$186:
+    A = \microsec_cnt[4]_gold, B = \microsec_cnt[4]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$185
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$184:
+    A = \microsec_cnt[1]_gold, B = \microsec_cnt[1]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$183
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$182:
+    A = \microsec_cnt[0]_gold, B = \microsec_cnt[0]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$181
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$180:
+    A = \microsec_cnt[3]_gold, B = \microsec_cnt[3]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$179
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$178:
+    A = \_067__gold, B = \_067__gate, Y = $auto$equiv_make.cc:358:find_same_cells$177
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$176:
+    A = \net18_gold, B = \run_60, Y = $auto$equiv_make.cc:358:find_same_cells$175
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$174:
+    A = \_076__gold, B = \_076__gate, Y = $auto$equiv_make.cc:358:find_same_cells$173
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$172:
+    A = \_075__gold, B = \_075__gate, Y = $auto$equiv_make.cc:358:find_same_cells$171
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$170:
+    A = \_081__gold, B = \_081__gate, Y = $auto$equiv_make.cc:358:find_same_cells$169
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$166:
+    A = \_058__gold, B = \_058__gate, Y = $auto$equiv_make.cc:358:find_same_cells$165
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$164:
+    A = \_086__gold, B = \_086__gate, Y = $auto$equiv_make.cc:358:find_same_cells$163
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$162:
+    A = \_023__gold, B = \_023__gate, Y = $auto$equiv_make.cc:358:find_same_cells$161
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$160:
+    A = \microsec_cnt[0]_gold, B = \microsec_cnt[0]_gate, Y = $auto$equiv_make.cc:358:find_same_cells$159
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$156:
+    A = \_004__gold, B = \_004__gate, Y = $auto$equiv_make.cc:358:find_same_cells$155
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$148:
+    A = \net12_gold, B = \event_pending[1], Y = $auto$equiv_make.cc:358:find_same_cells$147
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$146:
+    A = \net11_gold, B = \event_pending[0], Y = $auto$equiv_make.cc:358:find_same_cells$145
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$136:
+    A = \net10_gold, B = \cf_SlvEna, Y = $auto$equiv_make.cc:358:find_same_cells$135
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$134:
+    A = \sync_idle_check.clk_copy_gold, B = \sync_idle_check.clk_copy_gate, Y = $auto$equiv_make.cc:358:find_same_cells$133
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$130:
+    A = \sync_idle_check_n.clk_copy_gold, B = \sync_idle_check_n.clk_copy_gate, Y = $auto$equiv_make.cc:358:find_same_cells$129
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$128:
+    A = \_044__gold, B = \_044__gate, Y = $auto$equiv_make.cc:358:find_same_cells$127
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$122:
+    A = \_044__gold, B = \_044__gate, Y = $auto$equiv_make.cc:358:find_same_cells$121
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$124:
+    A = \_045__gold, B = \_045__gate, Y = $auto$equiv_make.cc:358:find_same_cells$123
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$120:
+    A = \_004__gold, B = \_004__gate, Y = $auto$equiv_make.cc:358:find_same_cells$119
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$126:
+    A = \_031__gold, B = \_031__gate, Y = $auto$equiv_make.cc:358:find_same_cells$125
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$138:
+    A = \_039__gold, B = \_039__gate, Y = $auto$equiv_make.cc:358:find_same_cells$137
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$142:
+    A = \_036__gold, B = \_036__gate, Y = $auto$equiv_make.cc:358:find_same_cells$141
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$152:
+    A = \_031__gold, B = \_031__gate, Y = $auto$equiv_make.cc:358:find_same_cells$151
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+  Trying to prove $equiv cell $auto$equiv_make.cc:359:find_same_cells$214:
+    A = \net17_gold, B = \run_100, Y = $auto$equiv_make.cc:358:find_same_cells$213
+    Adding 0 new cells to the problem (0 A, 0 B, 0 shared).
+    Problem size at t=10: 8 literals, 12 clauses
+    Failed to prove equivalence with sequence length 0.
+    No nets to continue in previous time step.
+Proved 0 previously unproven $equiv cells.
+
+28. Executing EQUIV_STATUS pass.
+Found 165 $equiv cells in equiv:
+  Of those cells 48 are proven and 117 are unproven.
+  Unproven $equiv $auto$equiv_make.cc:251:find_same_wires$110: \slow_gate_gold \net23_gold
+  Unproven $equiv $auto$equiv_make.cc:251:find_same_wires$111: \hold_engine_gold \hold_engine_gate
+  Unproven $equiv $auto$equiv_make.cc:251:find_same_wires$112: \force_sda_gold \force_sda_gate
+  Unproven $equiv $auto$equiv_make.cc:251:find_same_wires$113: \done_60_gold \done_60_gate
+  Unproven $equiv $auto$equiv_make.cc:251:find_same_wires$114: \done_100_gold \done_100_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$1: \sync_idle_check_n.scl_data_gold \sync_idle_check_n.scl_data_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$100: \mid_cnt[4]_gold \mid_cnt[4]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$102: \mid_cnt[5]_gold \mid_cnt[5]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$104: \mid_cnt[6]_gold \mid_cnt[6]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$105: \_050__gold \_050__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$109: \request_start_gold \request_start_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$11: \_044__gold \_044__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$12: \_005__gold \_005__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$14: \sync_idle_check_n.clk_copy_gold \sync_idle_check_n.clk_copy_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$15: \_006__gold \_006__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$18: \sync_idle_check.clk_copy_gold \sync_idle_check.clk_copy_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$2: \sync_idle_check.scl_data_gold \sync_idle_check.scl_data_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$20: \_039__gold \_039__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$21: \sync_sclsda_state.clk_copy_gold \sync_sclsda_state.clk_copy_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$24: \_036__gold \_036__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$25: \_007__gold \_007__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$26: \_008__gold \_008__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$27: \_035__gold \_035__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$28: \_009__gold \_009__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$29: \_010__gold \_010__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$3: \_021__gold \_021__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$30: \_034__gold \_034__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$31: \_033__gold \_033__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$33: \_031__gold \_031__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$34: \_030__gold \_030__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$36: \_028__gold \_028__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$38: \_011__gold \_011__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$39: \_004__gold \_004__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$4: \_000__gold \_000__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$40: \_012__gold \_012__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$41: \_026__gold \_026__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$42: \_025__gold \_025__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$43: \_013__gold \_013__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$44: \check_idle_n_gold \check_idle_n_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$45: \_014__gold \_014__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$46: \_015__gold \_015__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$47: \_024__gold \_024__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$49: \_023__gold \_023__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$5: \_047__gold \_047__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$50: \_022__gold \_022__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$52: \_086__gold \_086__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$53: \_085__gold \_085__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$55: \_018__gold \_018__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$56: \_083__gold \_083__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$59: \_081__gold \_081__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$6: \_046__gold \_046__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$61: \_079__gold \_079__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$62: \_020__gold \_020__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$63: \_078__gold \_078__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$65: \_076__gold \_076__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$66: \_075__gold \_075__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$67: \_074__gold \_074__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$69: \_073__gold \_073__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$7: \check_idle_gold \check_idle_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$70: \_072__gold \_072__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$72: \_070__gold \_070__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$73: \_069__gold \_069__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$74: \microsec_cnt[5]_gold \microsec_cnt[5]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$76: \_067__gold \_067__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$77: \microsec_cnt[2]_gold \microsec_cnt[2]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$79: \microsec_cnt[3]_gold \microsec_cnt[3]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$8: \sync_sclsda_state.scl_data_gold \sync_sclsda_state.scl_data_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$81: \microsec_cnt[0]_gold \microsec_cnt[0]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$83: \microsec_cnt[1]_gold \microsec_cnt[1]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$85: \microsec_cnt[4]_gold \microsec_cnt[4]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$88: \_060__gold \_060__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$9: \_045__gold \_045__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$90: \_058__gold \_058__gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$92: \mid_cnt[2]_gold \mid_cnt[2]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$94: \mid_cnt[0]_gold \mid_cnt[0]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$96: \mid_cnt[1]_gold \mid_cnt[1]_gate
+  Unproven $equiv $auto$equiv_make.cc:280:find_same_wires$98: \mid_cnt[3]_gold \mid_cnt[3]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$120: \_004__gold \_004__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$122: \_044__gold \_044__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$124: \_045__gold \_045__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$126: \_031__gold \_031__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$128: \_044__gold \_044__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$130: \sync_idle_check_n.clk_copy_gold \sync_idle_check_n.clk_copy_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$134: \sync_idle_check.clk_copy_gold \sync_idle_check.clk_copy_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$136: \net10_gold \cf_SlvEna
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$138: \_039__gold \_039__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$142: \_036__gold \_036__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$146: \net11_gold \event_pending[0]
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$148: \net12_gold \event_pending[1]
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$152: \_031__gold \_031__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$156: \_004__gold \_004__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$160: \microsec_cnt[0]_gold \microsec_cnt[0]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$162: \_023__gold \_023__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$164: \_086__gold \_086__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$166: \_058__gold \_058__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$170: \_081__gold \_081__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$172: \_075__gold \_075__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$174: \_076__gold \_076__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$176: \net18_gold \run_60
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$178: \_067__gold \_067__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$180: \microsec_cnt[3]_gold \microsec_cnt[3]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$182: \microsec_cnt[0]_gold \microsec_cnt[0]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$184: \microsec_cnt[1]_gold \microsec_cnt[1]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$186: \microsec_cnt[4]_gold \microsec_cnt[4]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$188: \_050__gold \_050__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$190: \_060__gold \_060__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$192: \_058__gold \_058__gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$196: \mid_cnt[2]_gold \mid_cnt[2]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$198: \mid_cnt[0]_gold \mid_cnt[0]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$200: \mid_cnt[1]_gold \mid_cnt[1]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$202: \mid_cnt[3]_gold \mid_cnt[3]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$204: \mid_cnt[4]_gold \mid_cnt[4]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$206: \mid_cnt[5]_gold \mid_cnt[5]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$208: \mid_cnt[6]_gold \mid_cnt[6]_gate
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$212: \net18_gold \run_60
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$214: \net17_gold \run_100
+  Unproven $equiv $auto$equiv_make.cc:359:find_same_cells$216: \request_start_gold \request_start_gate
+Found a total of 117 unproven $equiv cells.
+ERROR: Found 117 unproven $equiv cells in 'equiv_status -assert'.

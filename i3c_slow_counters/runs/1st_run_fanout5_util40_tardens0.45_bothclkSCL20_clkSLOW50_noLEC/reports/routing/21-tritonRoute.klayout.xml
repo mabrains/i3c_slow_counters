@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<report-database>
+    <categories/>
+    <cells>
+        <cell>
+            <name>i3c_slow_counters</name>
+        </cell>
+    </cells>
+    <items/>
+</report-database>

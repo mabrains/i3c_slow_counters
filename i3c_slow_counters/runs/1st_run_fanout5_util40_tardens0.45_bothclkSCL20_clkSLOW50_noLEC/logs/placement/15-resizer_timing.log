@@ -1,0 +1,69 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Warning: /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/resizer.lib line 32, default_operating_condition ss_100C_1v60 not found.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/cts/i3c_slow_counters.cts.def
+Notice 0: Design: i3c_slow_counters
+Notice 0:     Created 28 pins.
+Notice 0:     Created 225 components and 1281 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 162 nets and 468 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/cts/i3c_slow_counters.cts.def
+set_units -time ns
+set clk_period_scl 20
+set clk_period_slow 50
+create_clock [get_ports clk_SCL_n]  -name core_clock_1  -period ${clk_period_scl}
+set input_delay_value [expr ${clk_period_scl} * 0.4]
+set output_delay_value [expr ${clk_period_scl} * 0.6]
+create_clock [get_ports clk_SCL]  -name core_clock_2  -period ${clk_period_scl}
+set input_delay_value [expr ${clk_period_scl} * 0.4]
+set output_delay_value [expr ${clk_period_scl} * 0.6]
+create_clock [get_ports CLK_SLOW]  -name slow_clock  -period ${clk_period_slow}
+set input_delay_value [expr ${clk_period_slow} * 0.4]
+set output_delay_value [expr ${clk_period_slow} * 0.6]
+[INFO RSZ-0033] No hold violations found.
+Design Stats
+--------------------------------
+total instances           225
+multi row instances         0
+fixed instances            84
+nets                      164
+design area            3002.9 u^2
+fixed area              205.2 u^2
+movable area           1291.2 u^2
+utilization                46 %
+utilization padded         77 %
+rows                       20
+row height                2.7 u
+
+Placement Analysis
+--------------------------------
+total displacement       61.2 u
+average displacement      0.3 u
+max displacement         14.2 u
+original HPWL          2538.0 u
+legalized HPWL         2658.5 u
+delta HPWL                  5 %
+
+[INFO DPL-0020] Mirrored 62 instances
+[INFO DPL-0021] HPWL before            2658.5 u
+[INFO DPL-0022] HPWL after             2577.8 u
+[INFO DPL-0023] HPWL delta               -3.0 %
+[WARNING DPL-0005] Overlap check failed (11).
+ PHY_43 overlaps PHY_1
+ PHY_45 overlaps PHY_3
+ PHY_49 overlaps PHY_7
+ PHY_53 overlaps PHY_11
+ PHY_57 overlaps PHY_15
+ PHY_61 overlaps PHY_19
+ PHY_65 overlaps PHY_23
+ PHY_69 overlaps PHY_27
+ PHY_73 overlaps PHY_31
+ PHY_77 overlaps PHY_35
+ PHY_83 overlaps PHY_39

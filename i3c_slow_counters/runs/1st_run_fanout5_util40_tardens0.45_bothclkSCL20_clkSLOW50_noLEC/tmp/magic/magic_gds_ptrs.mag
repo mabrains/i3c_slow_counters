@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 13270 15414
+string GDS_FILE /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/magic/i3c_slow_counters.gds
+string GDS_END 649870
+string GDS_START 285698
+<< end >>

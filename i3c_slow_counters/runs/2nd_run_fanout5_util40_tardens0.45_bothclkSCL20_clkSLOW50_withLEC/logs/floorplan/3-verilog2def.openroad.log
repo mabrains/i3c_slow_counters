@@ -1,0 +1,13 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Warning: /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib line 31, default_operating_condition tt_025C_1v80 not found.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/tmp/merged_unpadded.lef
+[INFO IFP-0001] Added 20 rows of 120 sites.
+[INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
+[INFO] Floorplanned on a die area of 0.0 0.0 66.35 77.07 (microns). Saving to /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/reports/floorplan/3-verilog2def.die_area.rpt.
+[INFO] Floorplanned on a core area of 5.52 10.88 60.72 65.28 (microns). Saving to /openLANE_flow/designs/i3c_slow_counters/runs/2nd_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_withLEC/reports/floorplan/3-verilog2def.core_area.rpt.

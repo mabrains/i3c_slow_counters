@@ -1,0 +1,23 @@
+OpenSTA 2.3.0 38b40303a8 Copyright (c) 2019, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib line 31, default_operating_condition ff_n40C_1v95 not found.
+Warning: /home/ubuntu/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib line 32, default_operating_condition ss_100C_1v60 not found.
+Warning: /openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/synthesis/i3c_slow_counters.synthesis_optimized.v line 494, module sky130_fd_sc_hd__tapvpwrvgnd_1 not found.  Creating black box for PHY_40.
+set_units -time ns
+set clk_period_scl 20
+set clk_period_slow 50
+create_clock [get_ports clk_SCL_n]  -name core_clock_1  -period ${clk_period_scl}
+set input_delay_value [expr ${clk_period_scl} * 0.4]
+set output_delay_value [expr ${clk_period_scl} * 0.6]
+create_clock [get_ports clk_SCL]  -name core_clock_2  -period ${clk_period_scl}
+set input_delay_value [expr ${clk_period_scl} * 0.4]
+set output_delay_value [expr ${clk_period_scl} * 0.6]
+create_clock [get_ports CLK_SLOW]  -name slow_clock  -period ${clk_period_slow}
+set input_delay_value [expr ${clk_period_slow} * 0.4]
+set output_delay_value [expr ${clk_period_slow} * 0.6]
+tns 0.00
+wns 0.00

@@ -1,0 +1,26 @@
+
+12. Printing statistics.
+
+=== i3c_slow_counters ===
+
+   Number of wires:                133
+   Number of wire bits:            164
+   Number of public wires:          28
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                142
+     $_ANDNOT_                      41
+     $_AND_                          2
+     $_DFFE_PN0P_                   17
+     $_DFF_PN0_                      4
+     $_MUX_                          1
+     $_NAND_                        15
+     $_NOR_                          6
+     $_NOT_                          6
+     $_ORNOT_                        9
+     $_OR_                          23
+     $_XNOR_                        10
+     $_XOR_                          8
+

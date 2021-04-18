@@ -1,0 +1,11 @@
+lef:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/merged_unpadded.lef
+def:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/routing/19-addspacers.def
+guide:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/routing/18-fastroute.guide
+output:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/results/routing/i3c_slow_counters.def
+outputTA:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/routing/21-tritonRoute_TA.def
+outputguide:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/routing/21-tritonRoute.guide
+outputDRC:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/reports/routing/21-tritonRoute.drc
+outputMaze:/openLANE_flow/designs/i3c_slow_counters/runs/1st_run_fanout5_util40_tardens0.45_bothclkSCL20_clkSLOW50_noLEC/tmp/routing/21-tritonRoute_maze.log
+threads:4
+verbose:1
+drouteEndIterNum:64

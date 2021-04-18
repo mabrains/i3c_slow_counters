@@ -1,0 +1,9 @@
+
+30. Executing CHECK pass (checking for obvious problems).
+checking module i3c_slow_counters..
+Warning: Wire i3c_slow_counters.\slow_gate is used but has no driver.
+Warning: Wire i3c_slow_counters.\hold_engine is used but has no driver.
+Warning: Wire i3c_slow_counters.\force_sda is used but has no driver.
+Warning: Wire i3c_slow_counters.\done_60 is used but has no driver.
+Warning: Wire i3c_slow_counters.\done_100 is used but has no driver.
+found and reported 5 problems.
